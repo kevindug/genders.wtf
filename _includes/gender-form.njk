@@ -34,6 +34,12 @@
     {% endfor %}
     </div>
   {% endif %}
+  {% if gender.widget == "number" && gender.label %}
+    <label class="inline-flex items-center m-3">{{ label }}
+      <input type="number" name="gender-number">
+    </label>
+    </div>
+  {% endif %}
   </form>
   </div>
 {% endif %}
